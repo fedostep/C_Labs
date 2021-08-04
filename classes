@@ -1,0 +1,57 @@
+using namespace std;
+class EMPLOYEE {
+public:
+	int number;
+	string name;
+	float salary;
+	void pirnt() {
+		cout << "number-" << number << "\n" << "name-" << name << "\n" << "salary-" << salary << "\n";
+	}
+	void introduse() {
+		cout << "number" << "\n";
+		cin >> number;
+		cout << "name" << "\n";
+		cin >> name;
+		cout << "salary" << "\n";
+		cin >>salary;
+	}};
+int main(){
+	EMPLOYEE student;
+	student.introduse();
+	student.pirnt();
+
+
+######################################################################## 2
+ using namespace std;
+class EMPLOYEE {
+public:
+	int number;
+	string name;
+	float salary;
+	void pirnt() {
+		cout << "number-" << number << "\n" << "name-" << name << "\n" << "salary-" << salary << "\n";
+	}
+	void introduse() {
+		cout << "number" << "\n";
+		cin >> number;
+		cout << "name" << "\n";
+		cin >> name;
+		cout << "salary" << "\n";
+		cin >>salary;
+	}
+};
+int main()
+{
+	
+	EMPLOYEE a[10];
+	for (int i = 0; i < 10; i++) {
+		cout << "enter the data for employee-" << i << "\n";
+		a[i].introduse();
+	}
+		for (int i = 0; i < 10; i++) {
+			cout << "employee-" << i << "\n";
+			a[i].pirnt();
+		}
+	system("pause");
+return 0;
+}
